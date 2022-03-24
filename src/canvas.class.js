@@ -998,7 +998,7 @@
       this.cacheCanvasEl = this._createCanvasElement();
       this.cacheCanvasEl.setAttribute('width', this.width);
       this.cacheCanvasEl.setAttribute('height', this.height);
-      this.contextCache = this.cacheCanvasEl.getContext('2d');
+      this.contextCache = this.cacheCanvasEl.getContext('2d', {alpha: false});
     },
 
     /**

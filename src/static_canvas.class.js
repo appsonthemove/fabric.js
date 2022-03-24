@@ -320,7 +320,7 @@
         this._applyCanvasStyle(this.lowerCanvasEl);
       }
 
-      this.contextContainer = this.lowerCanvasEl.getContext('2d');
+      this.contextContainer = this.lowerCanvasEl.getContext('2d', {alpha: false});
     },
 
     /**
